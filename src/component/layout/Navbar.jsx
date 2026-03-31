@@ -205,7 +205,7 @@ function Navbar({ showLinks = true }) {
       <nav className="z-30 fixed top-0 left-6 right-6 sm:left-8 sm:right-8 md:left-16 md:right-16 lg:left-20 lg:right-20 xl:left-36 xl:right-36 bg-white border-b-2 border-gray-100">
         {/* <nav className="flex items-center justify-between py-4 sm:py-6 border-b-2 border-gray-100 top-0 bg-white z-30"> */}
         {/* Container with same padding as your page content */}
-        <div className="flex items-center justify-between gap-20 py-4 sm:py-6 w-full">
+        <div className="flex items-center justify-between gap-20 py-4 sm:pt-6 sm:pb-4.5 w-full">
           {/* Left Section: Logo + Name + Hamburger */}
           <div className="flex items-center sm:gap-2 group">
             {/* Hamburger */}
@@ -221,16 +221,11 @@ function Navbar({ showLinks = true }) {
             </button>
 
             <Link href="/" className="flex items-center gap-1 sm:gap-3">
-              <div className="h-8 w-8 sm:h-11 sm:w-11 relative">
+              <div className="h-8 w-34 sm:h-12 sm:w-56 relative">
                 <img
                   src="/arjit-logo.svg"
                   alt="Avatar-Logo"
-                  className="absolute w-full h-full rounded-full object-contain inset-0 group-hover:opacity-0 transition-opacity duration-300 opacity-100"
-                />
-                <img
-                  src="/arjit-logo-2.svg"
-                  alt="Avatar-Logo"
-                  className="absolute w-full h-full rounded-full object-contain inset-0 group-hover:opacity-100 transition-opacity duration-300 opacity-0"
+                  className="absolute w-full h-full rounded-full inset-0 transition-opacity duration-300 opacity-100"
                 />
               </div>
               {/* <div className="flex flex-col">
@@ -241,18 +236,7 @@ function Navbar({ showLinks = true }) {
                   Product Lead
                 </span>
               </div> */}
-              <div className="flex flex-col">
-                {/* Full name for sm and above, short for xs */}
-                <span className="text-stone-900 text-xs sm:text-sm lg:text-base font-semibold leading-tight tracking-tight">
-                  <span className="sm:hidden">Arjit K Arora</span>
-                  <span className="hidden sm:inline">Arjit Kaur Arora</span>
-                </span>
-
-                {/* Hide Product Lead on xs */}
-                <span className="hidden sm:inline text-gray-600 text-sm md:text-sm lg:text-base font-medium">
-                  Product Lead
-                </span>
-              </div>
+             
             </Link>
           </div>
 
