@@ -225,7 +225,7 @@ function Navbar({ showLinks = true }) {
                 <img
                   src="/arjit-logo.svg"
                   alt="Avatar-Logo"
-                  className="absolute w-full h-full rounded-full inset-0 transition-opacity duration-300 opacity-100"
+                  className="absolute w-full h-full inset-0 transition-opacity duration-300 opacity-100"
                 />
               </div>
               {/* <div className="flex flex-col">
